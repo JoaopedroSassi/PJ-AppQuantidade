@@ -1,18 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace AppQuantidade
 {
     public partial class MainPage : ContentPage
     {
+        int Quantidade = 1;
+
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void Aumentar(object sender, EventArgs e)
+        {
+            Quantidade++;
+            LblQtd.Text = Quantidade.ToString();
+        }
+
+        private void Diminuir(object sender, EventArgs e)
+        {
+            if (Quantidade != 0)
+            {
+                Quantidade--;
+                LblQtd.Text = Quantidade.ToString();
+            }
         }
     }
 }

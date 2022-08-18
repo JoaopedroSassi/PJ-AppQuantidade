@@ -5,10 +5,10 @@
 
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="50">
         <Label Text="Quantidade" FontSize="30" HorizontalTextAlignment="Center"/>
-        <Label Text="1" FontSize="48" TextColor="White" HorizontalTextAlignment="Center"/>
+        <Label x:Name="LblQtd" Text="1" FontSize="48" TextColor="White" HorizontalTextAlignment="Center"/>
         <StackLayout Orientation="Horizontal" Spacing="40">
-            <Button Text="+" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
-            <Button Text="-" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
+            <Button Clicked="Aumentar" Text="+" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
+            <Button Clicked="Diminuir" Text="-" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
         </StackLayout>
     </StackLayout>
 
