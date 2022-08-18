@@ -7,8 +7,8 @@
         <Label Text="Quantidade" FontSize="30" HorizontalTextAlignment="Center"/>
         <Label x:Name="LblQtd" Text="1" FontSize="48" TextColor="White" HorizontalTextAlignment="Center"/>
         <StackLayout Orientation="Horizontal" Spacing="40">
-            <Button Clicked="Aumentar" Text="+" FontSize="48" TextColor="#707070" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
-            <Button Clicked="Diminuir" Text="-" FontSize="48" TextColor="#707070" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
+            <Button Clicked="Aumentar" Text="+" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
+            <Button Clicked="Diminuir" Text="-" FontSize="48" BorderWidth="1" BorderColor="#707070" BackgroundColor="Gray" WidthRequest="90" HeightRequest="90"/>
         </StackLayout>
     </StackLayout>
 
